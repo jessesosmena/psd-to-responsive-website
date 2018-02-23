@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "webpack-dev-server --hot --inline",
+    "build": "webpack --config webpack.prod.config.js -p --progress --colors",
     "altdev": "webpack --progress --colors --watch",
     "test": "jest --config ./config/jest-config.js",
     "prod": "webpack -p --config webpack.prod.config.js",
