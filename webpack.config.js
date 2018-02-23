@@ -1,3 +1,4 @@
+//dropconst path = require('path');
 const path = require('path');
 const webpack = require('webpack')
 const autoprefixer = require('autoprefixer')
@@ -16,25 +17,21 @@ module.exports = {
       /* SCSS */
       {
         test: /\.scss?$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
           use: [
-            {
-              loader: 'css-loader'
-            },
-            {
-              loader: 'postcss-loader',
-              options: {
-                config: {
-                    path: './config/postcss.config.js'
-                }
-              }
-            },
-            {
-              loader: 'sass-loader'
-            }
-          ]
-        })
+              'style-loader',
+              'css-loader',
+              'sass-loader'
+            ]
+      },
+
+      {
+        test: /\.modernizrrc.js$/,
+        use: [ 'modernizr-loader' ]
+      },
+
+      {
+        test: /\.modernizrrc(\.json)?$/,
+        use: [ 'modernizr-loader', 'json-loader' ]
       }
     ]
   },
@@ -43,7 +40,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   resolve: {
-   extensions: ['.js']
+    alias: {
+      modernizr$: path.resolve(__dirname, "path/to/.modernizrrc")
+    },
+    extensions: ['.js']
  },
   devServer: {
     contentBase: './dist',
