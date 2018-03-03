@@ -1,18 +1,19 @@
+Demo: https://fathomless-harbor-56660.herokuapp.com/
 
-## React Starter 2.0 ##
-An easy React Starter Kit to get you up and running quickly. It includes the some of the latest and greatest:
+## PSD to Responsive Website ##
 
- - Express 4.
- - React Router V4.
- - Redux/Redux Thunk
+ - jquery 3.2.1
+ - normalize.css
+ - modernizr 3.5.0
  - Webpack & Webpack Dev Server.
  - Live Reloading.
  - PostCSS, Autoprefixer and SCSS.
- - Base Testing Setup for Jest and Enzyme.
+ - PSD Template included / assets directory
+
 
 ## Installation ##
 
- 1. `git clone https://github.com/DZuz14/React-Starter-2.0`
+ 1. `git clone`
  2. `npm install`
 
  Upon very first installation, the postinstall command in the package.json will build a bundle.js file for you,
