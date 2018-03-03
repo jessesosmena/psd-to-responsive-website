@@ -3,8 +3,6 @@ Demo: https://fathomless-harbor-56660.herokuapp.com/
 ## PSD to Responsive Website ##
 
  - jquery 3.2.1
- - normalize.css
- - modernizr 3.5.0
  - Webpack & Webpack Dev Server.
  - Live Reloading.
  - PostCSS, Autoprefixer and SCSS.
