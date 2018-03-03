@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900');
+
 @import "mixins";
 
 * {
@@ -62,14 +64,20 @@ header{
 			  text-decoration: none;
 			  color: #4e4e4e;
 			  text-transform: uppercase;
-			  font-weight: bold;
+			  font-weight: bolder;
 			  font-size: 12px;
+			  font-family: 'Roboto', sans-serif;
+
 			    @include mQ(480px){
-			       display: block;
-			       text-align: center;
-			       padding: 10px;
-			       color: #999;
-			       border-top: 1px solid #4f4f4f;
+			        display: block;
+			        text-align: center;
+			        padding: 10px;
+			        color: #999 !important;
+			        border-top: 1px solid #4f4f4f;
+					    &:hover{
+						   background-color: rgb(26, 187, 156);
+						   color: #fff !important;
+					    }
 			    }
 			}
 
@@ -111,10 +119,10 @@ header{
 		    }
             background: #555;
           	#burger-nav{
-		      width: 100%;
-		      height: 50px;
-		      @include burgerimage(menu-55);
-		      cursor: pointer;
+			      width: 100%;
+			      height: 50px;
+			      @include burgerimage(burger-nav13);
+			      cursor: pointer;
 		    }
 		}
 
@@ -182,7 +190,7 @@ header{
           width: 80%;
           padding: 0 10%;
           margin: 20px 0;
-        
+
         }
 	}
 
@@ -196,7 +204,7 @@ header{
 	h2{
 	  text-transform: uppercase;
 	  font-size: 15px;
-	  margin-bottom: 40px; 
+	  margin-bottom: 40px;
 	    @include mQ(768px){
 	      text-align: center;
 	    }
@@ -211,12 +219,12 @@ header{
 	  @include mQ(768px){
 	     float: none;
          width: 60%;
-         margin: 30px 20%;  
+         margin: 30px 20%;
 	  }
 
 	  @include mQ(480px){
          width: 80%;
-         margin: 30px 10%;  
+         margin: 30px 10%;
 	  }
 
 	}
@@ -257,7 +265,7 @@ header{
       @include mQ(480px){
 	    font-size: 14px;
 	    font-weight: bold;
-	  
+
       }
 }
 
@@ -340,4 +348,3 @@ footer{
 
     @include clearFix;
 }
-

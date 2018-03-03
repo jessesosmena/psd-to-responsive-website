@@ -43,7 +43,7 @@ export default class App extends Component {
 
       <div id="banner">
 
-        <img src="./images/banner.jpg" alt="banner" />
+        <img src="./images/main-banner.jpg" alt="banner" />
 
       </div>
 
