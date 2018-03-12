@@ -6,7 +6,7 @@ Demo: https://fathomless-harbor-56660.herokuapp.com/
  - Webpack & Webpack Dev Server.
  - Live Reloading.
  - PostCSS, Autoprefixer and SCSS.
- - PSD Template included / assets directory
+ - PSD / assets folder
 
 
 ## Installation ##
